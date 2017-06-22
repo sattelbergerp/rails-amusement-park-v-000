@@ -1,0 +1,4 @@
+<ul>
+    <%= link_to "New Attraction", new_attraction_path if current_user && current_user.admin%>
+    <%= render @attractions %>
+</ul>
